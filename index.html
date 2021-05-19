@@ -11,9 +11,9 @@
     <title>eshop</title>
 </head>
 
-<body>
+<body class=" container text-center">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning row">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">I-TECH PRO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -31,29 +31,50 @@
         </div>
     </nav>
 
-        <!-- CARROUSEL -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <!-- CARROUSEL -->
+    <div id="carouselExampleControls" class="carousel slide row" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/pc.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/smartphone.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/tablette.jpg" class="d-block w-100" alt="...">
-          </div>
+            <div class="carousel-item active">
+                <img src="assets/img/pc.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/smartphone.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/tablette.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
-      <!-- CARROUSEL FIN -->
+    </div>
+    <!-- CARROUSEL FIN -->
+
+    <div class="card">
+        <h3 class="card-header">À Propos</h3>
+        <div class="card-body">
+            <h4 class="card-title">Qui sommes-nous?</h4>
+            <p class="card-text">L'informatique est un domaine d'activité scientifique, technique, et industriel
+                concernant le traitement automatique de l'information numérique par l'exécution de programmes
+                informatiques par des machines : des systèmes embarqués, des ordinateurs, des robots, des automates,
+                etc.
+                <br>
+                Certains domaines de l'informatique peuvent être très abstraits, comme la complexité algorithmique, et
+                d'autres peuvent être plus proches d'un public profane. Ainsi, la théorie des langages demeure un
+                domaine davantage accessible aux professionnels formés (description des ordinateurs et méthodes de
+                programmation), tandis que les métiers liés aux interfaces homme-machine sont accessibles à un plus
+                large public.</p>
+            <p>Une question ?</p>
+            <a href="#" class="btn btn-primary">Contactez-nous!</a>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
     </script>
