@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/services.js"></script>
     <title>eshop</title>
 </head>
 
@@ -31,36 +33,305 @@
         </div>
     </nav>
 
-        <!-- CARROUSEL -->
+    <!-- CARROUSEL -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/pc.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/smartphone.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/tablette.jpg" class="d-block w-100" alt="...">
-          </div>
+            <div class="carousel-item active">
+                <img src="assets/img/pc.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/smartphone.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/tablette.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
-      <!-- CARROUSEL FIN -->
+    </div>
+    <!-- CARROUSEL FIN -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-    <script src="assets/js/script.js"></script>
+
+
+    <!-- NOS PRODUITS -->
+    <div class="container text-center p-3">
+        <h1>NOS PRODUITS I-TECH</h1>
+        <div class="container">
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/pc.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">PC-PORTABLE</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary pcportable">Voir les produits</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                            src="assets/img/tablette.jpg" role="img" aria-label="Placeholder: Image cap"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">TABLETTES</h5>
+                            <p class="card-text">Découvrez nos tablettes Android et IOS au meilleur rapport qualité/prix
+                                ! Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary ranger2">Voir les produits</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                            src="assets/img/smartphone.jpg" role="img" aria-label="Placeholder: Image cap"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">SMARTPHONES</h5>
+                            <p class="card-text">Découvrez nos Smarphones Android et IOS au meilleur rapport
+                                qualité/prix
+                                ! Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary ranger3">Voir les produits</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NOS PRODUITS FIN -->
+
+        <!-- NOS PRODUITS MASQUER PREMIERE RANGER -->
+        <div class="container">
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc1">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/asus.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">PC - ASUS</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">699€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUIT MASQUER DEUXIEME RANGER-->
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc2">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/ipadpro.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">IPAD PRO</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">899€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER FIN -->
+
+                <!-- PRODUIT MASQUER TROISIEME RANGER -->
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/s20ultra.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">SAMSUNG S20 PLUS ULTRA</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">699€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER FIN -->
+            </div>
+        </div>
+
+        <!-- PRODUIT MASQUER PREMIER RANGER-->
+        <div class="container">
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc1">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/acer.png"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">PC - ACER</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">999€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER DEUXIEME RANGER -->
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc2">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/samsung.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">SAMSUNG</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">999€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER FIN -->
+
+                <!-- PRODUIT MASQUER TROISIEME RANGER -->
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/iphone13.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone </h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">1699€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER FIN -->
+            </div>
+        </div>
+
+        <!-- PRODUIT MASQUER PREMIER RANGER-->
+        <div class="container boxpc1">
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc1">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/lenovo.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">PC - LENOVO</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">799€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER DEUXIEME RANGER -->
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc2">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/huawei.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">HUAWEI</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">399€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER FIN -->
+
+
+                <!-- PRODUIT MASQUER TROISIEME RANGER -->
+                <div class="col-sm-6 col-lg-4 mb-4 boxpc3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/s21ultra.jpg"
+                            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6"
+                            dy=".3em"></text>
+                        <div class="card-body">
+                            <h5 class="card-title">SAMSUNG S21 PLUS ULTRA</h5>
+                            <p class="card-text">Découvrez nos ordinateurs portables au meilleur rapport qualité/prix !
+                                Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
+                                7j/7.</p>
+                            <a href="#" class="btn btn-primary">699€</a>
+                            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUIT MASQUER FIN -->
+            </div>
+        </div>
+        <!-- NOS PRODUITS MASQUER FIN -->
+        <!-- NOS PRODUITS FIN -->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
