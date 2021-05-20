@@ -84,3 +84,50 @@ const products = [computers, smartphones, tablets];
 
 console.log(computers[1]);
 console.log(products[0]);
+console.log(smartphones[2]);
+
+$("#cgv_btn").click(function() {
+    $("#cgv").toggle();
+});
+$("#cgv").hide();
+
+$("#legal_btn").click(function() {
+    $("#legal").toggle();
+});
+$("#legal").hide();
+
+
+$('a[href^=".apropos"]').click(function(){
+    var the_id = $(this).attr("href");
+    if (the_id === '#') {
+    return;
+    }
+    $('html, body').animate({
+    scrollTop:$(the_id).offset().top
+    }, 'slow');
+    return false;
+    });
+
+
+$('a[href^=".produits"]').click(function(){
+    var the_id = $(this).attr("href");
+    if (the_id === '#') {
+    return;
+    }
+    $('html, body').animate({
+    scrollTop:$(the_id).offset().top
+    }, 'slow');
+    return false;
+    });
+
+
+$('a[href^=".contact"]').click(function(){
+    var the_id = $(this).attr("href");
+    if (the_id === '#') {
+    return;
+    }
+    $('html, body').animate({
+    scrollTop:$(the_id).offset().top
+    }, 'slow');
+    return false;
+    });
