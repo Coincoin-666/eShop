@@ -53,3 +53,15 @@ const products = [computers, smartphones, tablets];
 
 console.log(computers[1]);
 console.log(products[0]);
+console.log(smartphones[2]);
+
+$("#cgv_btn").click(function() {
+    $("#cgv").toggle();
+});
+$("#cgv").hide();
+
+$("#legal_btn").click(function() {
+    $("#legal").toggle();
+});
+$("#legal").hide();
+
