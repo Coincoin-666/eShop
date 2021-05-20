@@ -65,3 +65,6 @@ $("#legal_btn").click(function() {
 });
 $("#legal").hide();
 
+$("#chiQon").on('shown.bs.modal', function () {});
+
+// $("#chiQonModal").modal({ show: true })
