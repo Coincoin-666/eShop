@@ -1,0 +1,13 @@
+.badge-notify{
+    background:red;
+    position:relative;
+    right: 10px;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+  }
+  .my-cart-icon {
+    position: fixed;
+    z-index: 999;
+  }
