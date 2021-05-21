@@ -27,9 +27,32 @@
                     <a class="nav-link" href=".apropos">À Propos</a>
                     <a class="nav-link" href=".produits">Produits</a>
                     <a class="nav-link" href=".contact">Contact</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" width="24" height="24" fill="currentColor" class="bi bi-cart-fill panier" viewBox="0 0 16 16">
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg><span class="badge badge-notify my-cart-badge">0</span>
+                      </svg>
+
+                    <div class="modal fade" id="exampleModal" z-index="999"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title text-center" id="exampleModalLabel">
+                                      Message</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  Votre message a bien été envoyé!
+                              </div>
+                              <div class="modal-footer text-center">
+                                  <button type="button"
+                                      class="btn btn-primary justify-content-lg-center"
+                                      data-bs-dismiss="modal">Fermer</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -83,6 +106,10 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 25273fcf7d71d248643d302b6f2ce0c87e412bf0
     <!-- NOS PRODUITS -->
     <div class="container text-center p-3 produits">
         <h2>NOS PRODUITS I-TECH</h2>
@@ -165,7 +192,7 @@
                                 Livraison Offerte* - Retrait 1h en Magasin* - Retrait Drive* - Garantie 2 ans* - SAV
                                 7j/7.</p>
                             <a href="#" class="btn btn-primary">699€</a>
-                            <a href="#" class="btn btn-primary my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="assets/img/img_2.png">Ajouter au panier</a>
+                            <a href="#0" class="btn btn-primary my-cart-btn cd-add-to-cart js-cd-add-to-cart" data-price="699">Ajouter au panier</a>
                         </div>
                     </div>
                 </div>
@@ -432,6 +459,55 @@
                 </div>
             </div>
         </div>
+
+
+
+        <main class="cd-main container margin-top-xxl">
+            <div class="text-component text-center">
+              <h1>Add to Cart Interaction</h1>
+              <p class="flex flex-wrap flex-center flex-gap-xxs">
+                <a class="cd-article-link" href="https://codyhouse.co/gem/add-to-cart-interaction">📝 View Tutorial</a>
+                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="600">Add To Cart</a>
+              </p>
+            </div>
+          </main>
+
+
+        <div class="cd-cart cd-cart--empty js-cd-cart">
+            <a href="#0" class="cd-cart__trigger text-replace">
+                Cart
+                <ul class="cd-cart__count"> <!-- cart items count -->
+                    <li>0</li>
+                    <li>0</li>
+                </ul> <!-- .cd-cart__count -->
+            </a>
+        
+            <div class="cd-cart__content">
+                <div class="cd-cart__layout">
+                    <header class="cd-cart__header">
+                        <h2>Panier</h2>
+                        <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+                    </header>
+                    
+                    <div class="cd-cart__body">
+                        <ul>
+                            <!-- products added to the cart will be inserted here using JavaScript -->
+                        </ul>
+                    </div>
+        
+                    <footer class="cd-cart__footer">
+                        <a href="#0" class="cd-cart__checkout">
+                  <em>Paiement - €<span>0</span>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+                    </svg>
+                  </em>
+                </a>
+                    </footer>
+                </div>
+            </div> <!-- .cd-cart__content -->
+        </div> <!-- cd-cart -->
+        <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+        <script src="assets/js/main.js"></script> 
 
 
 
