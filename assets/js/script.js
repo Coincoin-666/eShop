@@ -97,6 +97,7 @@ $("#legal_btn").click(function() {
 $("#legal").hide();
 
 
+// SCROLLING MENU START
 $('a[href^=".apropos"]').click(function(){
     var the_id = $(this).attr("href");
     if (the_id === '#') {
@@ -131,3 +132,4 @@ $('a[href^=".contact"]').click(function(){
     }, 'slow');
     return false;
     });
+    // SCROLLING MENU END
