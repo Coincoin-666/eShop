@@ -96,10 +96,6 @@ $("#legal_btn").click(function() {
 });
 $("#legal").hide();
 
-$("#chiQon").on('shown.bs.modal', function () {});
-
-// $("#chiQonModal").modal({ show: true })
-
 // SCROLLING MENU START
 $('a[href^=".apropos"]').click(function(){
     var the_id = $(this).attr("href");
