@@ -115,6 +115,11 @@
 			cartList.insertAdjacentHTML('beforeend', productAdded);
 		};
 
+		$("#S21").click(function (e) { 
+			e.preventDefault();
+			addProduct(S21);
+		});
+
 		function removeProduct(product) {
 			if(cartTimeoutId) clearInterval(cartTimeoutId);
 			removePreviousProduct(); // prduct previously deleted -> definitively remove it from the cart
