@@ -1,3 +1,17 @@
+// Products Catalog
+
+var add_S21 = $("#add_S21");
+var add_Huawei = $("#add_Huawei");
+var add_Lenovo = $("#add_Lenovo");
+var add_iPhone = $("#add_iPhone");
+var add_samsung = $("#add_samsung");
+var add_acer = $("#add_acer");
+var add_S20 = $("#add_S20");
+var add_ipad = $("#add_ipad");
+var add_asus = $("#add_asus");
+
+
+
 // Add to Cart Interaction
 (function(){
   var cart = document.getElementsByClassName('js-cd-cart');
@@ -10,7 +24,7 @@
   		cartCount = cart[0].getElementsByClassName('cd-cart__count')[0],
   		cartCountItems = cartCount.getElementsByTagName('li'),
   		cartUndo = cart[0].getElementsByClassName('cd-cart__undo')[0],
-  		productId = 0, //this is a placeholder -> use your real product ids instead
+  		add_S21 = 0, //this is a placeholder -> use your real product ids instead
   		cartTimeoutId = false,
   		animatingQuantity = false;
 		initCartEvents();
@@ -95,31 +109,69 @@
 			}
 		};
 
-		function addProduct(target) {
+
+		// ADD TO CART FUNCTIONS
+
+		function addProduct(add_S21) {
 			// this is just a product placeholder
 			// you should insert an item with the selected product info
 			// replace productId, productName, price and url with your real product info
 			// you should also check if the product was already in the cart -> if it is, just update the quantity
-			productId = productId + 1;
-			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="assets/img/acer.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">PC-Acer</a></h3><span class="cd-cart__price">699€</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
-			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="assets/img/asus.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">PC-Asus</a></h3><span class="cd-cart__price">699€</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			add_S21 = add_S21 + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#8"><img src="assets/img/s21.png" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Samsung</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_S21 +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_S21 +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
 			cartList.insertAdjacentHTML('beforeend', productAdded);
 		};
 
-		function addProduct(S21) {
-			// this is just a product placeholder
-			// you should insert an item with the selected product info
-			// replace productId, productName, price and url with your real product info
-			// you should also check if the product was already in the cart -> if it is, just update the quantity
-			$("#S21") = $("#S21") + 1;
-			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="assets/img/s21.png" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Samsung</a></h3><span class="cd-cart__price">949€</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+		function addProduct(add_Huawei) {
+			add_Huawei = add_Huawei + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#7"><img src="assets/img/huawei.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Huawei</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_Huawei +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_Huawei +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
 			cartList.insertAdjacentHTML('beforeend', productAdded);
 		};
 
-		$("#S21").click(function (e) { 
-			e.preventDefault();
-			addProduct(S21);
-		});
+		function addProduct(add_Lenovo) {
+			add_Lenovo = add_Lenovo + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#6"><img src="assets/img/lenovo.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Lenovo</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_Lenovo +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_Lenovo +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		function addProduct(add_iPhone) {
+			add_iPhone = add_iPhone + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#5"><img src="assets/img/iphone13.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">iPhone 13</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_iPhone +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_iPhone +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		function addProduct(add_samsung) {
+			add_samsung = add_samsung + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#4"><img src="assets/img/samsung.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Tablette Samsung</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_samsung +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_samsung +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		function addProduct(add_acer) {
+			add_acer = add_acer + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#3"><img src="assets/img/acer.png" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">PC Acer</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_acer +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_acer+'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		function addProduct(add_S20) {
+			add_S20 = add_S20 + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#2"><img src="assets/img/s20ultra.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Samsung</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_S20 +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_S20 +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		function addProduct(add_ipad) {
+			add_ipad = add_ipad + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#1"><img src="assets/img/ipadpro.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">iPad</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_S20 +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_S20 +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		function addProduct(add_asus) {
+			add_asus = add_asus + 1;
+			var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="assets/img/asus.jpg" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Asus</a></h3><span class="cd-cart__price"></span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Supprimer</a><div class="cd-cart__quantity"><label for="cd-product-'+ add_asus +'">Qté</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ add_asus +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+			cartList.insertAdjacentHTML('beforeend', productAdded);
+		};
+
+		
+
 
 		function removeProduct(product) {
 			if(cartTimeoutId) clearInterval(cartTimeoutId);
